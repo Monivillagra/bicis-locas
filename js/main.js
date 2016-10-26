@@ -8,12 +8,12 @@ function validateForm(){
 //name
 //Los campos nombre y apellido sólo deben permitir caracteres de la A-Z   OK
 //Para los campos nombre y apellido la primera letra debe ser mayúscula
-    if( name == null || name.length <= 1 || /^\s+$/.test(name) || /^[A-Za-z]*$/.test(name) == false || name.substring(0,1) == name.substring(0,1).toUpperCase() == false ) {
+    if( name == null || name.length <= 3 || /^\s+$/.test(name) || /^[A-Za-z]*$/.test(name) == false || name.substring(0,1) == name.substring(0,1).toUpperCase() == false ) {
         alert("Escriba el primer caracter de su nombre en Mayúscula."); 
         return false;    
 	}
 //lastname
-	if( lastName == null || lastName.length == 0 || /^\s+$/.test(lastName) || /^[A-Za-z]*$/.test(lastName) == false || lastName.substring(0,1) == lastName.substring(0,1).toUpperCase() == false ) { 
+	if( lastName == null || lastName.length <= 3 || /^\s+$/.test(lastName) || /^[A-Za-z]*$/.test(lastName) == false || lastName.substring(0,1) == lastName.substring(0,1).toUpperCase() == false ) { 
         alert("Escriba el primer caracter de su apellido en Mayúscula."); 
         return false;   
 	}
